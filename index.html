@@ -2,17 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Polyglot Example</title>
+    <title>Webpage Example</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/polyglot.js/2.2.2/polyglot.min.js"></script>
     <script src="assets/dist/js/languagesChange.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
 </head>
 <body>
-    <select id="language">
+    <select id="language" class="btn-outline-primary">
         <option value="en">English</option>
         <option value="de">Deutsch</option>
       </select>
-  <h1 id="hello-world"></h1>
-  <p id="description"></p>
+  <h1 id="hello-world" class="text-center border"></h1>
+  <div class="text-danger">
+    <p id="description"></p>
+</div>
   <script>
     languagesChange.init();
   </script>
